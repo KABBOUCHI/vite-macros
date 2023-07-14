@@ -37,11 +37,24 @@ export default defineConfig({
 })
 ```
 
+Typescript:
+
+```ts
+// tsconfig.json
+{
+    "compilerOptions": {
+        "types": ["vite-macros/types"]
+    }
+}
+```
+
 Usage:
 
 ```js
 const data = include_str!('data.json');
 ```
+
+
 
 ## Development
 
