@@ -2,7 +2,7 @@ import { readFileSync } from "node:fs";
 
 const includeStrRegex = /include_str!\("(.+?)"\)/g;
 
-const ViteMacros = function macros({ extensions = ['.js', '.ts', '.jsx', '.tsx', '.vue'] }) {
+const ViteMacros = function macros({ extensions = ['.js', '.ts', '.jsx', '.tsx', '.vue'] } = {}) {
     return {
         name: "macros",
 
